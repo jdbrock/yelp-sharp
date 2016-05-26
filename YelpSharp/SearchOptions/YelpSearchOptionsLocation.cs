@@ -31,7 +31,7 @@ namespace YelpSharp
             if (location == null)
                 throw new ArgumentNullException(nameof(location));
 
-            if (!String.IsNullOrWhiteSpace(location))
+            if (String.IsNullOrWhiteSpace(location))
                 throw new ArgumentException($"The {nameof(location)} parameter must be specified.", nameof(location));
 
             // Store parameters.
